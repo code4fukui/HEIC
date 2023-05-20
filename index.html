@@ -1,0 +1,18 @@
+<script type="module">
+import { HEIC } from "./HEIC.js";
+
+const buf = new Uint8Array(await (await fetch("test.HEIC")).arrayBuffer());
+const img = await HEIC.decode(buf);
+console.log(img);
+
+const canvas = document.createElement("canvas");
+canvas.width = img.width;
+canvas.height = img.height;
+const ctx = canvas.getContext("2d");
+const imgd = ctx.createImageData(img.width, img.height);
+for (let i = 0; i < imgd.data.length; i++) {
+  imgd.data[i] = img.data[i];
+}
+ctx.putImageData(imgd, 0, 0);
+document.body.appendChild(canvas);
+</script>
