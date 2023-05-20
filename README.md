@@ -1,6 +1,6 @@
 # HEIC
 
-HEIC decoder in JavaScript ES module
+HEIC(HEIF) decoder in JavaScript ES module
 
 ## usage
 
@@ -47,5 +47,5 @@ deno run -A make_libheif-es.js
 
 ## dependencies
 
-- [libheic](https://github.com/strukturag/libheif)
+- [libheif](https://github.com/strukturag/libheif)
 
