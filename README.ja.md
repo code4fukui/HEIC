@@ -1,18 +1,18 @@
 # HEIC
 
-HEIC(HEIF) decoder in JavaScript ES module
+HEIC(HEIF) 画像のJavaScriptES Module実装です。
 
-## Demo
-[Example usage](https://code4fukui.github.io/HEIC/)
+## デモ
+[使用例](https://code4fukui.github.io/HEIC/)
 
-## Features
-- Decode HEIC (HEIF) images
-- Outputs image data as Uint8ClampedArray
+## 機能
+- HEIC (HEIF) 画像のデコード
+- 画像データをUint8ClampedArrayで出力
 
-## Requirements
-None, runs in the browser and Deno.
+## 必要環境
+ブラウザとDenoで実行可能です。
 
-## Usage
+## 使い方
 
 ### Web
 
@@ -48,8 +48,8 @@ const png = UPNG.encode([img.data], img.width, img.height, 0);
 await Deno.writeFile("test.png", png);
 ```
 
-## Dependencies
+## 依存ライブラリ
 - [libheif](https://github.com/strukturag/libheif)
 
-## License
+## ライセンス
 MIT
