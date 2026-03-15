@@ -1,6 +1,8 @@
 # HEIC
 
-HEIC(HEIF) decoder in JavaScript ES module
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
+HEIC(HEIF) decoder in JavaScript ES module.
 
 ## Demo
 [Example usage](https://code4fukui.github.io/HEIC/)
