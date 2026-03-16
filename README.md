@@ -54,4 +54,4 @@ await Deno.writeFile("test.png", png);
 - [libheif](https://github.com/strukturag/libheif)
 
 ## License
-MIT
+MIT License — see [LICENSE](LICENSE).

@@ -1,12 +1,12 @@
 # HEIC
 
-HEIC(HEIF) 画像のJavaScriptES Module実装です。
+HEIC(HEIF)形式の画像をデコードするJavaScriptモジュールです。
 
 ## デモ
 [使用例](https://code4fukui.github.io/HEIC/)
 
 ## 機能
-- HEIC (HEIF) 画像のデコード
+- HEIC (HEIF)画像のデコード
 - 画像データをUint8ClampedArrayで出力
 
 ## 必要環境
@@ -47,9 +47,6 @@ const img = await HEIC.decode(input);
 const png = UPNG.encode([img.data], img.width, img.height, 0);
 await Deno.writeFile("test.png", png);
 ```
-
-## 依存ライブラリ
-- [libheif](https://github.com/strukturag/libheif)
 
 ## ライセンス
 MIT
